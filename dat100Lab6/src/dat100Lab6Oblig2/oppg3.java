@@ -37,6 +37,11 @@ public class oppg3 {
 				    {7,7,7,7,7},
 				    {8,8,8,8,8}				
 			       };
+		
+		int [][]c={{1},
+				   {2},
+				   {3}				
+			      };
 	
 		
 		//3a
@@ -57,6 +62,8 @@ public class oppg3 {
 		System.out.println(tilStreng (a2));
 		System.out.println("matrise: b2");
 		System.out.println(tilStreng (b2));
+		System.out.println("matrise: c");
+		System.out.println(tilStreng (c));
 		
 		//3f 
 		//System.out.println(mat.length); //bare sjekker 
@@ -67,6 +74,8 @@ public class oppg3 {
 		skrivUtv1(multipliser(a1,b1));
 		System.out.print(tilStreng (a2)+"*\n"+tilStreng (b2)+" = \n");
 		skrivUtv1(multipliser(a2,b2));
+		System.out.print(tilStreng (a1)+"*\n"+tilStreng (c)+" = \n");
+		skrivUtv1(multipliser(a1,c));
 		
 		//3d
 		System.out.println("er matrise(mat) og og matrise(mat2) like: "+erLik(mat,mat2)+"\n");

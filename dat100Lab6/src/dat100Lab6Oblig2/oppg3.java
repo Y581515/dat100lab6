@@ -5,23 +5,38 @@ import java.lang.reflect.Array;
 public class oppg3 {
 
 	public static void main(String[] args) {
-		int [][]mat=   {{1,2,3},
-						{4,5,6},
-						{7,8,9}					
+		int [][]mat={{1,2,3},
+				     {4,5,6},
+					 {7,8,9}					
 					};
-		int [][]mat2=  {{1,2,3},
-						{4,5,6},
-						{7,8,9}					
-					};
+		int [][]mat2= {{1,2,3},
+					   {4,5,6},
+					   {7,8,9}					
+					  };
 		
-		int [][]a1= {{1,2,3},
-					 {4,5,6}	
-					};
+		int [][]a1={{1,2,3},
+					{4,5,6}	
+				   };
 		
-		int [][]b1= {{1,4},
+		int [][]b1={{1,4},
 					{2,5},
 					{3,6}				
-					};
+				   };
+		
+		
+		int [][]a2={{2,2,2,2,2},
+					{3,3,3,3,3},
+					{4,4,4,4,4},
+					{5,5,5,5,5},
+					{6,6,6,6,6}				
+				   };
+		
+		int [][]b2={{5,5,5,5,5},
+				    {6,6,6,6,6},
+				    {7,7,7,7,7},
+				    {7,7,7,7,7},
+				    {8,8,8,8,8}				
+			       };
 	
 		
 		//3a
@@ -46,6 +61,8 @@ public class oppg3 {
 		System.out.println(tilStreng(multipliser(mat,mat2)));
 		System.out.print(tilStreng (a1)+"*\n"+tilStreng (b1)+" = \n");
 		skrivUtv1(multipliser(a1,b1));
+		System.out.print(tilStreng (a2)+"*\n"+tilStreng (b2)+" = \n");
+		skrivUtv1(multipliser(a2,b2));
 		
 		//3d
 		System.out.println("er matrise(mat) og og matrise(mat2) like: "+erLik(mat,mat2)+"\n");

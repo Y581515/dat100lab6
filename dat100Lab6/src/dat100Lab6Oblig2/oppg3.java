@@ -53,12 +53,16 @@ public class oppg3 {
 		System.out.println(tilStreng (a1));
 		System.out.println("matrise: b1");
 		System.out.println(tilStreng (b1));
+		System.out.println("matrise: a2");
+		System.out.println(tilStreng (a2));
+		System.out.println("matrise: b2");
+		System.out.println(tilStreng (b2));
 		
 		//3f 
 		//System.out.println(mat.length); //bare sjekker 
 		//System.out.println(mat2[0].length); //bare sjekker 
 		System.out.print(tilStreng (mat)+"*\n"+tilStreng (mat2)+" = \n");
-		System.out.println(tilStreng(multipliser(mat,mat2)));
+		skrivUtv1((multipliser(mat,mat2)));
 		System.out.print(tilStreng (a1)+"*\n"+tilStreng (b1)+" = \n");
 		skrivUtv1(multipliser(a1,b1));
 		System.out.print(tilStreng (a2)+"*\n"+tilStreng (b2)+" = \n");

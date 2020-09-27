@@ -24,36 +24,36 @@ public class oppg3 {
 					};
 	
 		
-		//3a
-		skrivUtv1(mat);
-		
-		//3b
-		System.out.println(tilStreng (mat));
-		System.out.println(tilStreng (mat2));
-		System.out.println(tilStreng (a1));
-		System.out.println(tilStreng (b1));
-		
+//		//3a
+//		skrivUtv1(mat);
+//		
+//		//3b
+//		System.out.println(tilStreng (mat));
+//		System.out.println(tilStreng (mat2));
+//		System.out.println(tilStreng (a1));
+//		System.out.println(tilStreng (b1));
+//		
 		//3f 
 		//(!!!!!!!!!!!bytte posNr på multipliser metoden å få den raden du vil etter ganging!!!!!!!!!!!!)
 		//(!!!!!!!!!!! porøvd å lage en for løkke men, plutslig kuden fungerer ikke or returnerer bare 0!!!!!!!!!!!!)
-		//System.out.println(mat.length); bare sjekker 
-		//System.out.println(mat2[0].length); bare sjekker 
+		System.out.println(mat.length); //bare sjekker 
+		System.out.println(mat2[0].length); //bare sjekker 
 		skrivUtv1(multipliser(mat,mat2));
 		skrivUtv1(multipliser(a1,b1));
-		
-		//3d
-		System.out.println("er mat og mat2 like: "+erLik(mat,mat2)+"\n");
-		
-		//3c
-		skrivUtv1(mat);
-		int z=2;
-		System.out.println("skalar til mat gang "+z+" er");
-		skrivUtv1(skaler(z, mat));
-		
-		//3e
-		skrivUtv1(mat);
-		System.out.println("speil til mat: ");
-		skrivUtv1(speile(mat));
+//		
+//		//3d
+//		System.out.println("er mat og mat2 like: "+erLik(mat,mat2)+"\n");
+//		
+//		//3c
+//		skrivUtv1(mat);
+//		int z=2;
+//		System.out.println("skalar til mat gang "+z+" er");
+//		skrivUtv1(skaler(z, mat));
+//		
+//		//3e
+//		skrivUtv1(mat);
+//		System.out.println("speil til mat: ");
+//		skrivUtv1(speile(mat));
 	}
 	
 	//3a
@@ -127,11 +127,11 @@ public class oppg3 {
 	//3f
 	public static int[][] multipliser(int[][] a, int[][] b){
 		int [][] c= new int [a.length][b[0].length];
-		//for(int radNr=0;radNr>c.length;radNr++){
-				int radNr=0 ;
+		for(int radNr=0;radNr<c.length;radNr++){
+				
 				int radlengde=c[0].length;
 				int[] rad=c[radNr];
-				
+		
 				for(int k=0;k<radlengde;k++) {
 					
 					int sum=0;
@@ -139,9 +139,8 @@ public class oppg3 {
 						sum+=a[0+1*radNr][r]*b[r][k];		
 					}
 					rad[k]=sum;
-				}
-	
-			//}	
+			}	
+		}
 		return c;
 	}
 

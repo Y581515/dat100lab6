@@ -135,11 +135,10 @@ public class oppg3 {
 			
 			for(int plass=0;plass<matrise1[rad].length;plass++) {
 				
-				if(matrise1[rad][plass]==matrise2[rad][plass]) {
-					
-				}else {
+				if(matrise1[rad][plass]!=matrise2[rad][plass]) {
 					erLike=false;
 				}
+				
 			}
 		}
 		return erLike;	

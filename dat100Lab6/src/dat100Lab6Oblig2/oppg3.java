@@ -130,15 +130,14 @@ public class oppg3 {
 
 	//3d
 	public static boolean erLik(int[][] matrise1, int[][] matrise2) {
+		
 		boolean erLike=true;
 		for(int rad=0;rad<matrise1.length;rad++) {
-			
 			for(int plass=0;plass<matrise1[rad].length;plass++) {
-				
+
 				if(matrise1[rad][plass]!=matrise2[rad][plass]) {
 					erLike=false;
-				}
-				
+				}		
 			}
 		}
 		return erLike;	
